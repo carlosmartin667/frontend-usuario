@@ -7,10 +7,20 @@ export class UsuarioServicio {
   getcredencialesUsuario() {
     return this.http.get('https://localhost:44350/api/CredencialesUsuario');
   }
+
+  deletecredencialesUsuario(id: any) {
+    console.log(id);
+
+    return this.http.delete(
+      'https://localhost:44350/api/CredencialesUsuario/(id:int)?id='+id
+    );
+  }
   getActividadesUsuario(id: any) {
-    return this.http.get('https://localhost:44350/api/CredencialesUsuario', {
-      params: id,
-    });
+    console.log(id);
+
+    return this.http.get(
+      'https://localhost:44350/api/ActividadesUsuario/' + id
+    );
   }
   saludar: string = 'hola';
 }
