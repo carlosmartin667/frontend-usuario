@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html'
+  selector: 'app-lista',
+  templateUrl: './lista.component.html',
 })
-export class NavbarComponent implements OnInit {
+export class ListaComponent implements OnInit {
 
   constructor() { }
 
